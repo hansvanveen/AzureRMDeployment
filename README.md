@@ -13,4 +13,4 @@ The New-AzureRmDeployment cmdlet does not exist in earlier versions!
 ## Help & Contact
 
 The source for this extension can be found at https://github.com/hansvanveen/AzureRMDeployment
-Support requests can be send to hvveen@gmail.com
+Support requests can be send to hans_vanveen@hotmail.com
