@@ -1,4 +1,4 @@
-Write-Output "Starting AzureRmDeployment task (v1.2.1)"
+Write-Output "Starting AzureRmDeployment task (v1.2.2)"
 
 Import-Module $PSScriptRoot\ps_modules\VstsAzureHelpers_ -Force
 Initialize-Azure
