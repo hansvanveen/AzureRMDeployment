@@ -1,14 +1,20 @@
 # AzureRMDeployment
 
-This extension uses the Azure RM PowerShell New-AzureRmDeployment cmdlet for installing any ARM template in Azure DevOps.
+This extension uses the Azure RM PowerShell New-AzureRmDeployment cmdlet for installing
+ARM template in Azure DevOps. The cmdlet does not support a ResourceGroup name parameter
+so you find that input filed missing in the extension.
 
-If the specified json parameter file contains the parameter 'ProductName', it will use it as deploymentname (after converting spaces to hyphens).
-If the parameter is not found, the resourcegroup name will be used as deploymentname (again after converting spaces to hyphens).
+This also means that all information required to configure the resource must be present
+in the template files.
 
-## Notes
+The extension can handle nested templates, so you can make your configuration as compleet
+(or complex) as you like
 
-This extension requires the Agent to have "Azure RM PowerShell 6.10.0" or higher installed
-The New-AzureRmDeployment cmdlet does not exist in earlier versions!
+## Requirements
+
+- "Azure RM PowerShell 6.10.0" or higher
+  This extension requires the pipeline Agent to have this module installed.
+  The New-AzureRmDeployment cmdlet does not exist in earlier versions!
 
 ## Help & Contact
 

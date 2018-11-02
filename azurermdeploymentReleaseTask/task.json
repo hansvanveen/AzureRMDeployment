@@ -13,7 +13,7 @@
   "version": {
     "Major": 1,
     "Minor": 2,
-    "Patch": 1
+    "Patch": 2
   },
   "instanceNameFormat": "AzureRmDeployment",
   "groups": [
@@ -45,22 +45,13 @@
       "helpMarkDown": "Select the Azure Resource Manager subscription for the deployment."
     },
     {
-      "name": "resourceGroupName",
-      "type": "string",
-      "label": "Resource Group name",
-      "defaultValue": "",
-      "required": true,
-      "groupName": "AzureDetails",
-      "helpMarkDown": "Provide the name of a resource group"
-    },
-    {
       "name": "resourceLocation",
       "type": "string",
       "label": "Location",
       "defaultValue": "West Europe",
       "required": true,
       "groupName": "AzureDetails",
-      "helpMarkDown": "Location for deploying the resource group. If the resource group already exists in the subscription, then this value will be ignored."
+      "helpMarkDown": "Location for deploying the resource."
     },
     {
       "name": "templateLocation",
